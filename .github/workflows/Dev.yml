@@ -24,5 +24,5 @@ jobs:
     - name: Deploy to Surge.sh
       env:
         SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-      run: surge--project ./ --domain https://https://tairon-p1.surge.sh/ -- token SURGE_TOKEN
+      run: surge ./ https://https://tairon-p1.surge.sh/ -- token SURGE_TOKEN
       
